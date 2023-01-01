@@ -5,4 +5,8 @@ from django.http import HttpResponse
 def index(request):
     print(request)
     return HttpResponse(f"HELLOOOOOO {request}")
-# Create your views here.
+
+
+def register(request, username, password):
+    print(username, password)
+    # Create your views here.
